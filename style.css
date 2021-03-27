@@ -1,8 +1,3 @@
-img {
-    width: 200px;
-    height: 200px;
-}
-
 /* universal */
 
 *, *::before, *::after {
@@ -26,11 +21,15 @@ body {
     text-align: center;
 }
 
+h2, h4 {
+    margin-bottom: 1rem;
+}
+
 /* nav */
 
 header {
     position: fixed;
-    border-bottom: seashell 0.2rem solid;
+    border-bottom: seashell 0.1rem solid;
     width: 100%;
     background-color: black;
     z-index: 1;
@@ -48,8 +47,11 @@ ul li {
     padding: 0.5rem;
 }
 
+/* main bg */
+
 #firstSec {
     padding-top: 4.5rem;
+    height: 20rem;
 }
 
 #firstSec figure img {
@@ -60,6 +62,68 @@ ul li {
     position: relative;
     width: 100%;
     background-color: black;
-    top: -9rem;
+    top: -10.5rem;
     padding: 0.5rem;
+}
+
+/* tea types */
+
+#secondSec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#secondSec img {
+    width: 90%;
+    height: 90%;
+}
+
+#secondSec figure {
+    margin-bottom: 1rem;
+}
+
+#secondSec figcaption {
+    font-weight: bold;
+}
+
+/* locations */
+
+#thirdSec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 31rem;
+}
+
+#thirdSec figure img {
+    width: 100%;
+    height: 30rem;
+}
+
+#thirdSubSec {
+    position: relative;
+    top: -29.5rem;
+    width: 80%;
+}
+
+.location-sec {
+    background-color: black;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* footer */
+
+h5, footer p {
+    margin-bottom: 2rem;
+}
+
+#copyright {
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-weight: bold;
 }
