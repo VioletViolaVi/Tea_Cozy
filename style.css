@@ -1,3 +1,10 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+
+/* universal */
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -6,4 +13,53 @@
 
 header, nav, main, footer, section {
     display: block;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+/* nav */
+
+header {
+    position: fixed;
+    border-bottom: seashell 0.2rem solid;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+#logo {
+    width: 55%;
+    height: 30%;
+}
+
+ul li {
+    display: inline;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+#firstSec {
+    padding-top: 4.5rem;
+}
+
+#firstSec figure img {
+    width: 100%;
+}
+
+#firstSec section {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    top: -9rem;
+    padding: 0.5rem;
 }
