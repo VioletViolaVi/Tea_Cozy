@@ -16,9 +16,10 @@ html {
 
 body {
     background-color: black;
-    color: white;
+    color: seashell;
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
+    opacity: 0.9;
 }
 
 h2, h4 {
@@ -26,6 +27,10 @@ h2, h4 {
 }
 
 /* nav */
+
+#bigScreens {
+    display: none;
+}
 
 header {
     position: fixed;
@@ -69,7 +74,7 @@ ul li {
 /* tea types */
 
 #featuredTeaSec {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -189,8 +194,102 @@ h5, footer p {
     #featuredTeaSec section {
         margin-top: 15rem;
     }
+    #featuredTeaSec img {
+        width: 40%;
+    }
     /* locations */
     #thirdSubSec {
         width: 50%;
+    }
+}
+
+@media only screen and (min-width: 757px) {
+    /* tea types */
+    #featuredTeaSec section {
+        margin-top: 20rem;
+    }
+    /* locations */
+    #thirdSubSec {
+        width: 20rem;
+    }
+}
+
+@media only screen and (min-width: 877px) {
+    /* main bg */
+    #missionSec section {
+        top: -20.5rem;
+    }
+    /* tea types */
+    #featuredTeaSec section {
+        margin-top: 25rem;
+    }
+    #featuredTeaSec img {
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 996px) {
+    /* nav */
+    #smallScreens {
+        display: none;
+    }
+    #bigScreens {
+        display: block;
+    }
+    #bigScreens figure {
+        width: 15%;
+        float: left;
+    }
+    #logo {
+        width: 100%;
+        padding: 0.7rem 0rem 0rem 0.7rem;
+    }
+    #bigScreens ul {
+        text-align: right;
+        padding-top: 0.7rem;
+    }
+    /* main bg */
+    #missionSec {
+        padding-top: 3rem;
+    }
+    #missionSec section {
+        top: -25.5rem;
+    }
+    /* tea types */
+    #featuredTeaSec section {
+        margin-top: 30rem;
+    }
+    #featuredTeaSec img {
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 1135px) {
+    /* main bg */
+    #missionSec section {
+        top: -29.5rem;
+    }
+    /* tea types */
+    #featuredTeaSec section {
+        margin-top: 35rem;
+    }
+}
+
+@media only screen and (min-width: 1255px) {
+    /* universal */
+    html {
+        font-size: 22px;
+    }
+    /* nav */
+    #missionSec section {
+        top: -22.5rem;
+    }
+    /* tea types */
+    #featuredTeaSec section {
+        margin-top: 23rem;
+    }
+    /* locations */
+    #thirdSubSec {
+        width: 15rem;
     }
 }
