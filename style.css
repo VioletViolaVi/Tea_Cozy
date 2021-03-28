@@ -79,12 +79,6 @@ ul li {
 
 /* tea types */
 
-#featuredTeaSec {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 #featuredTeaSec img {
     width: 90%;
     height: 90%;
@@ -115,7 +109,6 @@ ul li {
 #thirdSubSec {
     position: relative;
     top: -41.5rem;
-    width: 80%;
 }
 
 .location-sec {
@@ -132,10 +125,6 @@ ul li {
 }
 
 /* footer */
-
-footer {
-    margin-top: 12rem;
-}
 
 h5, footer p {
     margin-bottom: 2rem;
@@ -155,19 +144,15 @@ h5, footer p {
         top: -11.5rem;
     }
     /* tea types */
-    #featuredTeaSec section {
+    #featuredTeaSec #titles {
         margin-top: 2rem;
     }
 }
 
 @media only screen and (min-width: 440px) {
     /* tea types */
-    #featuredTeaSec section {
+    #featuredTeaSec #titles {
         margin-top: 5rem;
-    }
-    /* locations */
-    #thirdSubSec {
-        width: 57%;
     }
 }
 
@@ -185,9 +170,32 @@ h5, footer p {
         margin-bottom: 0.5rem;
         top: -13.5rem;
     }
+    /* tea types & locations */
+    .flexContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     /* tea types */
-    #featuredTeaSec section {
+    #featuredTeaSec #titles {
         margin-top: 10rem;
+    }
+    #featuredTeaSec img {
+        width: 12rem;
+        height: 10rem;
+        margin: 0.3rem;
+    }
+    /* locations */
+    #thirdSubSec {
+        top: -29.5rem;
+    }
+    #locationsSec figure img {
+        height: 30rem;
+    }
+    .location-sec {
+        background-color: black;
+        margin: 0.5rem;
+        width: 46%;
     }
 }
 
@@ -197,15 +205,8 @@ h5, footer p {
         top: -15.5rem;
     }
     /* tea types */
-    #featuredTeaSec section {
+    #featuredTeaSec #titles {
         margin-top: 15rem;
-    }
-    #featuredTeaSec img {
-        width: 40%;
-    }
-    /* locations */
-    #thirdSubSec {
-        width: 50%;
     }
 }
 
@@ -215,12 +216,17 @@ h5, footer p {
         scroll-padding-top: 110px;
     }
     /* tea types */
-    #featuredTeaSec section {
+    #featuredTeaSec #titles {
         margin-top: 20rem;
     }
     /* locations */
-    #thirdSubSec {
-        width: 20rem;
+}
+
+@media only screen and (min-width: 807px) {
+    /* tea types */
+    #featuredTeaSec img {
+        width: 16rem;
+        height: 12rem;
     }
 }
 
@@ -234,11 +240,8 @@ h5, footer p {
         top: -20.5rem;
     }
     /* tea types */
-    #featuredTeaSec section {
+    #featuredTeaSec #titles {
         margin-top: 25rem;
-    }
-    #featuredTeaSec img {
-        width: 35%;
     }
 }
 
@@ -274,11 +277,12 @@ h5, footer p {
         top: -25.5rem;
     }
     /* tea types */
-    #featuredTeaSec section {
+    #featuredTeaSec #titles {
         margin-top: 30rem;
     }
     #featuredTeaSec img {
-        width: 35%;
+        width: 20rem;
+        height: 15rem;
     }
 }
 
@@ -288,7 +292,7 @@ h5, footer p {
         top: -29.5rem;
     }
     /* tea types */
-    #featuredTeaSec section {
+    #featuredTeaSec #titles {
         margin-top: 35rem;
     }
 }
@@ -313,11 +317,15 @@ h5, footer p {
         top: -24.5rem;
     }
     /* tea types */
-    #featuredTeaSec section {
+    #featuredTeaSec #titles {
         margin-top: 25rem;
     }
-    /* locations */
-    #thirdSubSec {
-        width: 15rem;
+}
+
+@media only screen and (min-width: 1366px) {
+    /* tea types */
+    #featuredTeaSec img {
+        width: 27rem;
+        height: 20rem;
     }
 }
