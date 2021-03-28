@@ -210,6 +210,10 @@ h5, footer p {
 }
 
 @media only screen and (min-width: 757px) {
+    /* universal */
+    html {
+        scroll-padding-top: 110px;
+    }
     /* tea types */
     #featuredTeaSec section {
         margin-top: 20rem;
@@ -221,6 +225,10 @@ h5, footer p {
 }
 
 @media only screen and (min-width: 877px) {
+    /* universal */
+    html {
+        scroll-padding-top: 120px;
+    }
     /* main bg */
     #missionSec section {
         top: -20.5rem;
@@ -235,6 +243,10 @@ h5, footer p {
 }
 
 @media only screen and (min-width: 996px) {
+    /* universal */
+    html {
+        scroll-padding-top: 50px;
+    }
     /* nav */
     #smallScreens {
         display: none;
@@ -284,15 +296,25 @@ h5, footer p {
 @media only screen and (min-width: 1255px) {
     /* universal */
     html {
-        font-size: 22px;
+        scroll-padding-top: 40px;
     }
     /* nav */
     #missionSec section {
         top: -22.5rem;
     }
+    #bigScreens ul {
+        padding-top: 1.4rem;
+    }
+    /* main bg */
+    #missionSec figure img {
+        height: 40rem;
+    }
+    #missionSec section {
+        top: -24.5rem;
+    }
     /* tea types */
     #featuredTeaSec section {
-        margin-top: 23rem;
+        margin-top: 25rem;
     }
     /* locations */
     #thirdSubSec {
